@@ -1,40 +1,70 @@
 .command {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: $background-color-command;
 
   &__title {
     margin-top: 0;
-    margin-bottom: 50px;
-
+    // margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $primary-text-color;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    // font-size: 36px;
+    font-size: 28px;
+    // line-height: 1.17;
+    line-height: 1.18;
     text-align: center;
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: block;
   }
 
   &__card {
-    width: 270px;
-    margin-right: 30px;
+    // width: 270px;
+    width: 100%;
+    // height: 622px;
+    // margin-right: 30px;
+    margin-bottom: 30px;
     background-color: $white-color;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
     &:last-child {
-      margin-right: 0;
+      // margin-right: 0;
+      margin-bottom: 0;
     }
   }
 
-  &__name {
-    margin-top: 0;
-    margin-bottom: 10px;
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    height: auto;
 
+    // @media screen and (max-width: 768px) {
+    //         flex-basis: calc((100% - 1 * 30px) / 1);
+    //         &>img {
+    //             width: 100%;
+    //             object-fit: contain;
+    //             object-position: center;
+    //         }}
+  }
+
+  &__name {
+    // margin-top: 0;
+    // margin-bottom: 10px;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -54,8 +84,11 @@
 }
 
 .inner-info {
+  // padding-top: 30px;
+  // padding-bottom: 30px;
+
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
 }
 
@@ -83,12 +116,14 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
+    // &:hover
+    &:active,
     &:focus {
       background-color: $accent-color;
     }
 
-    &:hover .social-network-list__icon,
+    // &:hover .social-network-list__icon
+    &:active .social-network-list__icon,
     &:focus .social-network-list__icon {
       fill: $white-color;
     }

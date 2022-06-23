@@ -1,75 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
-"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+">
 
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
 
-  <body>
+<body>
+ 
     <header class="page-header">
-      <div class="container wrapper">
-        <nav class="page-header__nav">
-          <a href="./index.html" class="page-header__logo">
-            Web<span class="page-header__logo page-header__logo--black"
-              >Studio</span
-            >
-          </a>
+        <div class="container wrapper">
+            <nav class="page-header__nav">
+                <a href="./index.html" class="page-header__logo">
+                    Web<span class="page-header__logo page-header__logo--black">Studio</span>
+                </a>
 
-          <!-- <ul class="site-nav">
-            <li class="site-nav__item">
-              <a
-                href="./index.html"
-                class="site-nav__link site-nav__link--current"
-                >Студия</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav> -->
+                <ul class="site-nav">
+                    <li class="site-nav__item"> 
+                        <a href="./index.html"
+                            class="site-nav__link site-nav__link--current">Студия</a> </li>
+                    <li class="site-nav__item"> <a href="./portfolio.html" class="site-nav__link">Портфолио</a> </li>
+                    <li class="site-nav__item"> <a href="./index.html" class="site-nav__link">Контакты</a> </li>
+                </ul>
+            </nav>
 
-        <!-- <ul class="contacts">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icon">
-                <use href="./images/sprite-new.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg class="contacts__icon">
-                <use href="./images/sprite-new.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul> -->
-      </div>
+
+            <ul class="contacts">
+                <li class="contacts__item"> <a href="mailto:info@devstudio.com" class="contacts__link"> <svg
+                            class="contacts__icon">
+                            <use href="./images/sprite-new.svg#icon-envelope">
+                            </use>
+                        </svg> info@devstudio.com</a> </li>
+                <li class="contacts__item"> <a href="tel:+380961111111" class="contacts__link"> <svg
+                            class="contacts__icon">
+                            <use href="./images/sprite-new.svg#icon-smartphone">
+                            </use>
+                        </svg> +38 096 111 11 11</a> </li>
+            </ul>
+        </div>
     </header>
-     <main> 
+    <main>
 
        
         <section class="hero">
@@ -81,7 +64,7 @@
         </section>
 
        
-         <section class="benefits"> 
+        <section class="benefits">
             <div class="container">
                 <h2 class="benefits__title benefits__title--visually-hidden">Преимущества</h2>
 
@@ -135,10 +118,10 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>
 
  
-         <section class="services">
+        <section class="services">
             <div class="container">
                 <h2 class="services__title">Чем мы занимаемся</h2>
                 <ul class="services__list">
@@ -165,44 +148,17 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>
 
        
-         <section class="command">
+        <section class="command">
             <div class="container">
                 <h2 class="command__title">
                     Наша команда
                 </h2>
                 <ul class="command__list">
                     <li class="command__card">
-                        <!-- <picture>
-                <source
-                  srcset="
-                    ./images/team/person-1-desktop.jpg    1x,
-                    ./images/team/person-1-desktop-2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/team/person-1-tablet.jpg    1x,
-                    ./images/team/person-1-tablet-2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <img
-                  srcset="
-                    ./images/team/person-1-mobile.jpg    1x,
-                    ./images/team/person-1-mobile-2x.jpg 2x
-                  "
-                  src="./images/team/person-1-mobile.jpg"
-                  width="270"
-                  alt="Барбер ворк"
-                />
-              </picture> -->
-                        <img class="command__img" src="./images/photo1.jpg" alt="photo Igor" width="270" height="260">
+                        <img src="./images/photo1.jpg" alt="photo Igor" width="270" height="260">
                         <div class="inner-info">
                             <h3 class="command__name">Игорь Демьяненко</h3>
                             <p class="command__function">Product Designer</p>
@@ -246,7 +202,7 @@
                     </li>
 
                     <li class="command__card">
-                        <img class="command__img" src="./images/photo2.jpg" alt="photo Olga" width="270" height="260">
+                        <img src="./images/photo2.jpg" alt="photo Olga" width="270" height="260">
                         <div class="inner-info">
                             <h3 class="command__name">Ольга Репина</h3>
                             <p class="command__function">Frontend Developer</p>
@@ -288,7 +244,7 @@
                     </li>
 
                     <li class="command__card">
-                        <img class="command__img" src="./images/photo3.jpg" alt="photo Nikolay" width="270" height="260">
+                        <img src="./images/photo3.jpg" alt="photo Nikolay" width="270" height="260">
                         <div class="inner-info">
                             <h3 class="command__name">Николай Тарасов</h3>
                             <p class="command__function">Marketing</p>
@@ -330,7 +286,7 @@
                     </li>
 
                     <li class="command__card">
-                        <img class="command__img" src="./images/photo4.jpg" alt="photo Michael" width="270" height="260">
+                        <img src="./images/photo4.jpg" alt="photo Michael" width="270" height="260">
                         <div class="inner-info">
                             <h3 class="command__name">Михаил Ермаков</h3>
                             <p class="command__function">UI Designer</p>
@@ -372,10 +328,10 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>
 
       
-        <section class="clients"> 
+        <section class="clients">
             <div class="container">
                 <h2 class="clients__title">
                     Постоянные клиенты
@@ -429,11 +385,11 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>
     </main>
 
    
-    <footer class="page-footer"> 
+    <footer class="page-footer">
         <div class="container">
             <div class="page-footer__wrapper">
                 <div class="page-footer__inner">
@@ -443,10 +399,10 @@
                             <li class="address-list__item">
                                 <a href="г.Киев,пр-тЛесиУкраинки,26" class="address-list__link address-list__link--street">г. Киев, пр-т Леси Украинки, 26</a>
                             </li>
-                            <li class="address-list__item">
+                            <li class="address__item">
                                 <a href="mailto:info@example.com" class="address-list__link">info@example.com</a>
                             </li>
-                            <li class="address-list__item">
+                            <li class="address__item">
                                 <a href="tel:+380991111111" class="address-list__link">+38 099 111 11 11</a>
                             </li>
                         </ul>
@@ -510,10 +466,10 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
    
-    <!-- <div data-modal class="backdrop is-hidden" data-backdrop>
+    <div data-modal class="backdrop is-hidden" data-backdrop>
         <div class="backdrop__modal" data-modal>
             <button data-modal-close class="backdrop__button" data-close-modal>
                 <svg class="backdrop__icon" width="11" height="11">
@@ -576,8 +532,9 @@
             </div>
             </form>
         </div>
-    </div>  -->
+    </div>
 
     <script src="./js/modal.js"></script>
-  </body>
+</body>
+
 </html>
