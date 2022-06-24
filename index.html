@@ -194,22 +194,71 @@
                 <h2 class="services__title">Чем мы занимаемся</h2>
                 <ul class="services__list">
                     <li class="services__item">
+                        <picture>
+                            <source srcset="
+                             ./images/img1.jpg 1x,
+                      ./images/desctop/img1-2x.jpg 2x
+                     " media="(min-width:1200px)" />
 
-                        <img src="./images/img1.jpg" alt="computer" width="370" height="294">
+                            <source srcset="
+                               ./images/img1.jpg 1x,
+                      ./images/desctop/img1-2x.jpg 2x
+                     " media="(min-width:768px)" />
+
+                            <img srcset="
+                            ./images/img1.jpg 1x,
+                      ./images/desctop/img1-2x.jpg 2x
+                    " class="services__img" src="./images/img1.jpg" alt="computer" width="370" height="294">
+                        </picture>
+
+
                         <div class="inner-services">
                             <h3 class="services__name">Десктопные приложения</h3>
                         </div>
                     </li>
 
                     <li class="services__item">
-                        <img src="./images/img2.jpg" alt="smartphone" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                                     ./images/img2.jpg 1x,
+                                              ./images/desctop/img2-2x.jpg 2x
+                                             " media="(min-width:1200px)" />
+
+                            <source srcset="
+                                                       ./images/img2.jpg 1x,
+                                              ./images/desctop/img2-2x.jpg 2x
+                                             " media="(min-width:768px)" />
+
+                            <img srcset="
+                                                    ./images/img2.jpg 1x,
+                                              ./images/desctop/img2-2x.jpg 2x
+                                            " class="services__img" src="./images/img2.jpg" alt="smartphone"
+                                width="370" height="294">
+                        </picture>
+
                         <div class="inner-services">
                             <h3 class="services__name">Мобильные приложения</h3>
                         </div>
                     </li>
 
                     <li class="services__item">
-                        <img src="./images/img3.jpg" alt="tablet" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                 ./images/img3.jpg 1x,
+                              ./images/desctop/img3-2x.jpg 2x
+                                " media="(min-width:1200px)" />
+
+                            <source srcset="
+                                 ./images/img3.jpg 1x,
+                             ./images/desctop/img3-2x.jpg 2x
+                             " media="(min-width:768px)" />
+
+                            <img srcset="
+                                ./images/img3.jpg 1x,
+                              ./images/desctop/img3-2x.jpg 2x
+                     " class="services__img" src="./images/img3.jpg" alt="tablet" width="370" height="294">
+                        </picture>
+
                         <div class="inner-services">
                             <h3 class="services__name">Дизайнерские решения</h3>
                         </div>
@@ -226,34 +275,24 @@
                 </h2>
                 <ul class="command__list">
                     <li class="command__card">
-                        <!-- <picture>
-                <source
-                  srcset="
-                    ./images/team/person-1-desktop.jpg    1x,
-                    ./images/team/person-1-desktop-2x.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
 
-                <source
-                  srcset="
-                    ./images/team/person-1-tablet.jpg    1x,
-                    ./images/team/person-1-tablet-2x.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
+                        <picture>
+                            <source srcset="
+                                       ./images/photo1.jpg 1x,
+            ./images/desctop/photo1-desctop2x.jpg 2x
+                  " media="(min-width:1200px)" />
 
-                <img
-                  srcset="
-                    ./images/team/person-1-mobile.jpg    1x,
-                    ./images/team/person-1-mobile-2x.jpg 2x
-                  "
-                  src="./images/team/person-1-mobile.jpg"
-                  width="270"
-                  alt="Барбер ворк"
-                />
-              </picture> -->
-                        <img class="command__img" src="./images/photo1.jpg" alt="photo Igor" width="270" height="260">
+                            <source srcset="
+                                 ./images/photo1.jpg 1x,
+            ./images/tablet/photo1-tablet2x.jpg 2x
+                  " media="(min-width:768px)" />
+
+                            <img srcset="
+                            ./images/photo1.jpg 1x,
+            ./images/mobile/photo1-mobile2x.jpg 2x
+            " class="command__img" src="./images/photo1.jpg" alt="photo Igor" width="270" height="260">
+                        </picture>
+
                         <div class="inner-info">
                             <h3 class="command__name">Игорь Демьяненко</h3>
                             <p class="command__function">Product Designer</p>
@@ -297,7 +336,25 @@
                     </li>
 
                     <li class="command__card">
-                        <img class="command__img" src="./images/photo2.jpg" alt="photo Olga" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                                                                                       ./images/photo2.jpg 1x,
+                                                            ./images/desctop/photo2-desctop2x.jpg 2x
+                                                                  " media="(min-width:1200px)" />
+
+                            <source srcset="
+                                                                                 ./images/photo2.jpg 1x,
+                                                            ./images/tablet/photo2-tablet2x.jpg 2x
+                                                                  " media="(min-width:768px)" />
+
+                            <img srcset="
+                                                                            ./images/photo2.jpg 1x,
+                                                            ./images/mobile/photo2-mobile2x.jpg 2x
+                                                            " class="command__img" src="./images/photo2.jpg"
+                                alt="photo Olga" width="270" height="260">
+                        </picture>
+
+
                         <div class="inner-info">
                             <h3 class="command__name">Ольга Репина</h3>
                             <p class="command__function">Frontend Developer</p>
@@ -339,8 +396,26 @@
                     </li>
 
                     <li class="command__card">
-                        <img class="command__img" src="./images/photo3.jpg" alt="photo Nikolay" width="270"
-                            height="260">
+
+                        <picture>
+                            <source srcset="
+                                    ./images/photo3.jpg 1x,
+                                    ./images/desctop/photo3-desctop2x.jpg 2x
+                                          " media="(min-width:1200px)" />
+
+                            <source srcset="
+                                    ./images/photo3.jpg 1x,
+                                    ./images/tablet/photo3-tablet2x.jpg 2x
+                                          " media="(min-width:768px)" />
+
+                            <img srcset="
+                                     ./images/photo3.jpg 1x,
+                                    ./images/mobile/photo3-mobile2x.jpg 2x
+                                    " class="command__img" src="./images/photo3.jpg" alt="photo Nikolay" width="270"
+                                height="260">
+                        </picture>
+
+
                         <div class="inner-info">
                             <h3 class="command__name">Николай Тарасов</h3>
                             <p class="command__function">Marketing</p>
@@ -382,8 +457,23 @@
                     </li>
 
                     <li class="command__card">
-                        <img class="command__img" src="./images/photo4.jpg" alt="photo Michael" width="270"
-                            height="260">
+                        <picture>
+                            <source srcset="
+                                 ./images/photo4.jpg 1x,
+                             ./images/desctop/photo4-desctop2x.jpg 2x
+                         " media="(min-width:1200px)" />
+
+                            <source srcset="
+                                      ./images/photo4.jpg 1x,
+                                ./images/tablet/photo4-tablet2x.jpg 2x
+                            " media="(min-width:768px)" />
+
+                            <img srcset="
+                                  ./images/photo4.jpg 1x,
+                                ./images/mobile/photo4-mobile2x.jpg 2x
+                         " class="command__img" src="./images/photo4.jpg" alt="photo Michael" width="270" height="260">
+                        </picture>
+
                         <div class="inner-info">
                             <h3 class="command__name">Михаил Ермаков</h3>
                             <p class="command__function">UI Designer</p>

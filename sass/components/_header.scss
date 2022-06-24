@@ -46,7 +46,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
 
     & .icon-cross {
       display: none;
@@ -73,6 +73,7 @@
 .menu-container {
   padding: 48px 40px;
   background-color: $white-color;
+  z-index: 1;
 
   @media screen and (max-width: 767px) {
     display: none;
