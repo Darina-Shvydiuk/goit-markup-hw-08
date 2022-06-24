@@ -1,7 +1,5 @@
 .hero {
   text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: $background-color-hero;
@@ -14,13 +12,22 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  // height: 600px;
-  // max-width: 1600px;
   width: 100%;
   max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+  }
 
   &__title {
     margin-top: 0;

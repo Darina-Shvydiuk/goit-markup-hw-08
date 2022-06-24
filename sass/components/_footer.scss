@@ -4,20 +4,39 @@
   padding-bottom: 60px;
 
   &__wrapper {
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: baseline;
-
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      // align-items: center;
+      // align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      // flex-wrap: wrap;
+      // align-items: baseline;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
 
   &__inner {
-    // margin-right: 70px;
     margin-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-bottom: 0;
+      flex-shrink: 0;
+      text-align: start;
+    }
   }
 
   &__logo {
@@ -46,6 +65,10 @@
     padding-top: 0px;
     padding-bottom: 20px;
     margin: 0;
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 }
 
@@ -71,7 +94,7 @@
       color: $white-color;
     }
 
-    // &:hover
+    &:hover,
     &:active,
     &:focus {
       color: $accent-color;
@@ -82,9 +105,14 @@
 // Социальные сети
 
 .inner-social {
-  // margin-right: 93px;
   margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .social-list {
@@ -110,7 +138,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // &:hover
+    &:hover,
     &:active,
     &:focus {
       background-color: $accent-color;
@@ -134,11 +162,23 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
   &__label {
     // display: block;
     // width: 50%;
     // margin-right: 12px;
     margin-bottom: 20px;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 
   &__text {
@@ -156,9 +196,7 @@
 
   &__field {
     display: block;
-    // width: 358px;
-    // height: 50px;
-    width: 450px;
+    width: 100%;
     height: auto;
     padding: 15px 15px;
     background-color: transparent;
@@ -167,6 +205,11 @@
     border-radius: 4px;
     outline: none;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+    }
 
     &::placeholder {
       width: 47px;
@@ -200,7 +243,7 @@
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // &:hover
+    &:hover,
     &:active,
     &:focus {
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -211,5 +254,16 @@
     width: 24px;
     height: 24px;
     margin-left: 10px;
+  }
+}
+.inner-sub {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // max-width: 570px;
   }
 }

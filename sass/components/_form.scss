@@ -11,6 +11,8 @@
   visibility: visible;
   pointer-events: painted;
   opacity: 1;
+  overflow-y: scroll;
+  z-index: 1;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms,
     visibility 250ms;
@@ -23,7 +25,8 @@
     padding: 40px;
     // width: 528px;
     // height: 581px;
-    width: 480px;
+    width: 95%;
+    max-width: 450px;
     height: auto;
 
     background-color: rgba(255, 255, 255, 1);
@@ -36,6 +39,12 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 480px) and (orientation: landscape) {
+      top: 70%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 528px;
+      top: 50%;
     }
   }
 
@@ -60,7 +69,7 @@
     margin-top: 8px;
     margin-right: 8px;
 
-    //  &:hover
+    &:hover,
     &:active,
     &:focus {
       fill: $accent-color;
@@ -111,6 +120,7 @@
   }
 
   &__label {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -120,7 +130,7 @@
 
   &__field {
     // width: 448px;
-    width: 370px;
+    width: 100%;
     height: auto;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -129,14 +139,14 @@
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    //  &:hover
+    &:hover,
     &:active,
     &:focus {
       border: 1px solid $accent-color;
     }
   }
 
-  // &__field:hover + &__icon
+  &__field:hover + &__icon,
   &__field:active + &__icon {
     fill: $accent-color;
   }
@@ -158,7 +168,8 @@
 
   &__textarea {
     resize: none;
-    width: 370px;
+    // width: 370px;
+    width: 100%;
     min-height: 120px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -179,7 +190,7 @@
       color: rgba(117, 117, 117, 0.5);
     }
 
-    // &:hover
+    &:hover,
     &:active,
     &:focus {
       border: 1px solid $accent-color;
