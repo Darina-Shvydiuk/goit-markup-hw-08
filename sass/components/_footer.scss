@@ -17,7 +17,7 @@
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-direction: row;
       flex-wrap: nowrap;
     }
@@ -25,7 +25,7 @@
 
   &__inner {
     margin-bottom: 60px;
-    text-align: center;
+    text-align: start;
 
     @media screen and (min-width: 1200px) {
       margin-right: 70px;
@@ -109,7 +109,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
-    margin-left: 70px;
+    // margin-left: 70px;
     margin-bottom: 0;
   }
 }

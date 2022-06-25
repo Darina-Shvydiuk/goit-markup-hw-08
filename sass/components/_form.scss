@@ -39,7 +39,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 480px) and (orientation: landscape) {
-      top: 70%;
+      // top: 70%;
     }
 
     @media screen and (min-width: 1200px) {
@@ -245,7 +245,7 @@
     border: 2px solid $primary-text-color;
     width: 16px;
     height: 16px;
-    margin-right: 8px;
+    margin-right: 5px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -263,17 +263,22 @@
   }
 
   &__text {
-    // width: 100%;
-    width: 370px;
+    width: 100%;
+    // width: 370px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
 
     color: $secondary-text-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 
   &__link {
-    width: 370px;
+    // width: 370px;
+    width: 100%;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
