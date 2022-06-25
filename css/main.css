@@ -844,7 +844,7 @@ body {
 }
 .page-footer__inner {
   margin-bottom: 60px;
-  text-align: start;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .page-footer__inner {
@@ -1442,7 +1442,14 @@ body {
   .work-examples__inner {
     width: 100%;
     max-width: 354px;
-    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-examples__inner {
+    position: relative;
+    overflow: hidden;
   }
 }
 .work-examples__overlay {
