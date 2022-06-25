@@ -1062,7 +1062,7 @@ body {
   pointer-events: painted;
   opacity: 1;
   overflow-y: scroll;
-  z-index: 1;
+  z-index: 2;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms, visibility 250ms;
 }
 .backdrop__modal {
@@ -1384,6 +1384,9 @@ body {
 }
 .work-examples__item:hover, .work-examples__item:focus, .work-examples__item:active {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.work-examples__item:hover .work-examples__overlay, .work-examples__item:active .work-examples__overlay {
+  transform: translateY(0%) scale(1);
 }
 @media screen and (min-width: 768px) {
   .work-examples__item {
