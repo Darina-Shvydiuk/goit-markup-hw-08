@@ -5,6 +5,10 @@ ul {
 }
 img {
   display: block;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  height: auto;
 }
 
 body {
@@ -12,6 +16,12 @@ body {
   color: $primary-text-color;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+body.no-scroll {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
 }
 
 .container {

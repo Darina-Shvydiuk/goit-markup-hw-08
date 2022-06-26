@@ -8,6 +8,10 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  height: auto;
 }
 
 body {
@@ -15,6 +19,12 @@ body {
   color: #212121;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -538,12 +548,6 @@ body {
 .services__item:last-child {
   margin-right: 0;
 }
-.services__img {
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
-  height: auto;
-}
 .services__name {
   width: 100%;
   height: 16px;
@@ -641,12 +645,6 @@ body {
   .command__card:nth-child(-n+2) {
     margin-bottom: 0;
   }
-}
-.command__img {
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
-  height: auto;
 }
 .command__name {
   margin-top: 0;
@@ -1510,12 +1508,6 @@ body {
   .work-examples__text {
     padding: 63px 24px;
   }
-}
-.work-examples__img {
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
-  height: auto;
 }
 .work-examples__projects {
   width: 100%;
